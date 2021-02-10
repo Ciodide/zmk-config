@@ -56,11 +56,11 @@
 
 &gpio1 {
        status = "okay";
-}
+};
 
 &usbd {
       status = "okay";
-}
+};
 
 &flash0 {
 	/*
