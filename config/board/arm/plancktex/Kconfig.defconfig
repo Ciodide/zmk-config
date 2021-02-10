@@ -1,0 +1,26 @@
+config BOARD
+       default "PlanckTeX"
+
+config USB_NRFX
+       default y
+
+config USB_DEVICE_STACK
+       default y
+
+config BT_CTLR
+       default BT
+
+config ZMK_BLE
+       default y
+
+config ZMK_USB
+       default y
+
+config PINMUX
+       default y
+
+#config BOARD_NRFMICRO_CHARGER
+#	default y
+
+#config ZMK_BATTERY_VOLTAGE_DIVIDER
+#	default y
