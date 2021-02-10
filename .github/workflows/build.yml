@@ -31,8 +31,8 @@ jobs:
         run: west init -l config
       - name: West Update
         run: west update
-      - name: Echo zmkfirmware boards
-        run: ls /__w/zmk-config/zmk-config/zmk/app/board/arm/
+      - name: Show current working directory
+        run: pwd
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (PlanckTeX)
