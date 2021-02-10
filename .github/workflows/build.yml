@@ -31,12 +31,10 @@ jobs:
         run: west init -l config
       - name: West Update
         run: west update
-      - name: Echo zmkfirmware boards
-        run: ls ./zmk/app/boards/arm
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (PlanckTeX)
-        run: west build -s zmk/app -b plancktex
+        run: west build -s zmk/app -b plancktex -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: PlanckTeX DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/plancktex.dts.pre.tmp
