@@ -32,7 +32,7 @@ jobs:
       - name: West Update
         run: west update
       - name: Echo zmkfirmware boards
-        run: ls ./zmk/
+        run: ls ./zmk/app/
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (PlanckTeX)
