@@ -34,7 +34,7 @@ jobs:
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (PlanckTeX)
-        run: west build -s zmk/app -b plancktex -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config/board/arm/plancktex"
+        run: west build -s zmk/app -b PlanckTeX -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config/board/arm/plancktex"
       - name: PlanckTeX DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/plancktex.dts.pre.tmp

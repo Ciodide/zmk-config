@@ -1,7 +1,7 @@
 #include <nordic/nrf52840_qiaa.dtsi>
 /{
 	model = "PlanckTeX";
-	compatible = "PlanckTeX";
+	compatible = "plancktex";
 
 	chosen{
 		zephyr,code-partition = &code_partition;

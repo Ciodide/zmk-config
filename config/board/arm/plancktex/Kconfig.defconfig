@@ -1,5 +1,5 @@
 config BOARD
-       default "PlanckTeX"
+       default "plancktex"
 
 config USB_NRFX
        default y
