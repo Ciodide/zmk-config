@@ -31,10 +31,14 @@ jobs:
         run: west init -l config
       - name: West Update
         run: west update
+      - name: Copy plancktex files to zmkfirmware
+      	run: cp -r ${GITHUB_WORKSPACE}/config/board/arm/plancktex /__w/zmk-config/zmk-config/zmk/app/board/arm/plancktex
+      - name: Echo zmkfirmware boards
+      	run: ls -la /__w/zmk-config/zmk-config/zmk/app/board/arm/
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (PlanckTeX)
-        run: west build -s zmk/app -b plancktex -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config/board/arm/plancktex"
+        run: west build -s zmk/app -b plancktex
       - name: PlanckTeX DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/plancktex.dts.pre.tmp
