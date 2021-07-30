@@ -1,6 +1,9 @@
 config BOARD
        default "plancktex"
 
+config ZMK_KEYBOARD_NAME
+	default "IITE-PlanckTeX"
+
 config USB_NRFX
        default y
 
