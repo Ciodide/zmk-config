@@ -46,7 +46,7 @@
 	  bindings = <
 		&reset &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &none &none &none &none &none &bootloader
 		&kp CAPSLOCK  &bt BT_CLR &out OUT_USB &out OUT_TOG &out OUT_BLE &none &none &none &none &none &kp SCROLLLOCK
-		&none &to  ALPHABAT &to NUMBER  &to FUNTION &to CONTROL &to GAME &to GAME_NUMBER &to NONE  &none &none &none &none
+		&none &to  ALPHABAT &to NUMBER  &to FUNTION &to CONTROL &to GAME &to GAME_NUMBER &none  &none &none &none &none
 		&none       &none &none       &mo CONTROL 	  &none &none       &none
 		>;
 	};
