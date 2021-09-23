@@ -9,7 +9,7 @@
 #define CONTROL 3
 #define GAME 4
 #define GAME_NUMBER 5
-#define NONE 6
+// #define NONE 6
 
 /{
   keymap {
@@ -69,6 +69,7 @@
 		>;
 	};
 	
+/*
 	none_layer {
 	  bindings = <
 		&none &none &none &none &none &none &none &none &none &none &none &none
@@ -77,7 +78,7 @@
 		&none       &none &none       &mo CONTROL 	  &none &none       &none
 		>;
 	};
-		
+*/		
   };
  };
 
