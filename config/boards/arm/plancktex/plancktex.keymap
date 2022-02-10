@@ -69,7 +69,7 @@
 	contorl_layer {
 	  bindings = <
 		&reset &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &bt BT_CLR &out OUT_USB &out OUT_TOG &out OUT_BLE &none &bootloader
-		&kp CAPSLOCK  &mkp LCLK &none &none &mkp RCLK &none &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &kp SCROLLLOCK 
+		&kp CAPSLOCK  &mkp LCLK &mkp RCLK &mkp MCLK &mkp MB4 &mwh SCROLL_UP &mwh SCROLL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &kp SCROLLLOCK 
 		&to ALPHABAT &to NUMBER  &to FUNTION &to GAME &to GAME_NUMBER &to CONTROL &none  &none &none &none &none &none
 		&none       &none &none       &mo CONTROL 	  &none &none       &none
 		>;
