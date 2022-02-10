@@ -11,6 +11,11 @@
 #define CONTROL 5
 // #define NONE 6
 
+&kscan0 {
+    debounce-press-ms = <10>;
+    debounce-release-ms = <10>;
+};
+
 /{
   keymap {
 	compatible = "zmk,keymap";
