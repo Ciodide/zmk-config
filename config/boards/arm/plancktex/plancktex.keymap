@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define ALPHABAT 0
 #define NUMBER 1
@@ -67,8 +68,8 @@
 
 	contorl_layer {
 	  bindings = <
-		&reset &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &none &none &none &none &none &bootloader
-		&kp CAPSLOCK  &bt BT_CLR &out OUT_USB &out OUT_TOG &out OUT_BLE &none &none &none &none &none &none &kp SCROLLLOCK 
+		&reset &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &bt BT_CLR &out OUT_USB &out OUT_TOG &out OUT_BLE &none &bootloader
+		&kp CAPSLOCK  &mkp LCLK &none &none &mkp RCLK &none &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &kp SCROLLLOCK 
 		&to ALPHABAT &to NUMBER  &to FUNTION &to GAME &to GAME_NUMBER &to CONTROL &none  &none &none &none &none &none
 		&none       &none &none       &mo CONTROL 	  &none &none       &none
 		>;
